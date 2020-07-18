@@ -7,6 +7,23 @@ function sumar()
 //Defino variables
 	var Num1
 	var Num2
+	var Res
+	
+//Asigno
+	Num1 = parseInt(document.getElementById("txtIdNumeroUno").value);
+	Num2 = parseInt(document.getElementById("txtIdNumeroDos").value);
+		
+
+//Resultado
+	alert("La suma es " + (Num1 + Num2));
+
+
+/*
+Mi Ejercicio Original
+
+	//Defino variables
+	var Num1
+	var Num2
 	var Res1
 	var Res2
 	
@@ -17,7 +34,9 @@ function sumar()
 	Res2 = parseInt(Num2);
 
 //Resultado
-	alert("La suma es " + (Res1 + Res2));
+	alert("La suma es " + (Res1 + Res2));*/
+
+
 
 }
 
