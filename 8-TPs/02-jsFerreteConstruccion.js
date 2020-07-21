@@ -6,13 +6,33 @@ C.	Para hacer un contrapiso de 1m x 1m se necesitan 2 bolsas de cemento y 3 de c
 
 function Rectangulo () 
 {
+    let L
+    let A
+
+    L=parseInt(document.getElementById("txtIdLargo").value) ;
+    A=parseInt(document.getElementById("txtIdAncho").value) ;
+
+    alert("Debes comprar " + (6*L+6*A) + " metros de alambre");
 
 }
 function Circulo () 
 {
-	
-}
+    let R
+
+    R=parseInt(document.getElementById("txtIdRadio").value) ;
+    
+    alert ("Debes comprar " + 6*3.14*R + " metros de alambre"); //¿por qué da distinto si pongo o no paréntesis? si la multiplicacion es comutativa...
+
+} 
 function Materiales () 
 {
-	
+    let L
+    let A
+
+    L=parseInt(document.getElementById("txtIdLargo").value) ;
+    A=parseInt(document.getElementById("txtIdAncho").value) ;
+
+    alert("Debes comprar " + (L*A)*2 + " bolsas de cemento y " + (L*A)*3 + " bolsas de cal");
+ 
+
 }
