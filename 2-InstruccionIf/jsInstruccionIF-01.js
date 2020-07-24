@@ -1,7 +1,7 @@
 function mostrar()
 {
 	//tomo la edad  
-	let edad
+	let edad;
 
 	edad = parseInt(document.getElementById("txtIdEdad").value); //usamos parseInt porque la edad es un numero entero 
 

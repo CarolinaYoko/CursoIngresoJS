@@ -1,6 +1,6 @@
 function mostrar()
 {
-	let vEdad
+	let vEdad;
 	vEdad = parseInt(document.getElementById("txtIdEdad").value)
 
 	
