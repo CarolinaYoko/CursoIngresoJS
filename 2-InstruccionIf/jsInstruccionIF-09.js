@@ -10,6 +10,7 @@ function mostrar()
 
 	alert(vNum);	
 
+
 }//FIN DE LA FUNCIÓN
 
     // Math.floor redondea al entero inferior

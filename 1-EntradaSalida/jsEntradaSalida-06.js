@@ -5,9 +5,9 @@ mostrar el resulto por medio de "ALERT"*/
 function sumar()
 {
 //Defino variables
-	var Num1
-	var Num2
-	var Res
+	var Num1;
+	var Num2;
+	var Res;
 	
 //Asigno
 	Num1 = parseInt(document.getElementById("txtIdNumeroUno").value);

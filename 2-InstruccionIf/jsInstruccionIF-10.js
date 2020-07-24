@@ -10,17 +10,17 @@ function mostrar()
 
 	if (vNum < 4)
 	{
-		alert("Vamos, la próxima se puede");
+		alert(vNum + " Vamos, la próxima se puede");
 	}
 
 	else if( vNum >=4 && vNum <=8)
 	{
-		alert("APROBÓ");
+		alert(vNum +" APROBÓ");
 	}
 
 	else
 	{
-		alert("EXCELENTE");
+		alert(vNum + " EXCELENTE");
 	}
 
 	
