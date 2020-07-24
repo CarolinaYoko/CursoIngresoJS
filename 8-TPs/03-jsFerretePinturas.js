@@ -16,7 +16,7 @@ function FahrenheitCentigrados ()
 
 function CentigradosFahrenheit () 
 {
-    let C
+    let C;
 
     C = parseFloat(document.getElementById("txtIdTemperatura").value) ;
     

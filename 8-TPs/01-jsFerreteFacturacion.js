@@ -19,9 +19,9 @@ function Sumar ()
 
 function Promedio () 
 {
-	let Imp1
-    let Imp2
-    let Imp3
+	let Imp1;
+    let Imp2;
+    let Imp3;
 
     Imp1 = parseInt(document.getElementById("txtIdPrecioUno").value);
     Imp2 = parseInt(document.getElementById("txtIdPrecioDos").value);
@@ -33,9 +33,9 @@ function Promedio ()
 
 function PrecioFinal () 
 {
-	let Imp1
-    let Imp2
-    let Imp3
+	let Imp1;
+    let Imp2;
+    let Imp3;
 
     Imp1 = parseInt(document.getElementById("txtIdPrecioUno").value);
     Imp2 = parseInt(document.getElementById("txtIdPrecioDos").value);
