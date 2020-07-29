@@ -3,7 +3,29 @@ function mostrar() {
 	let vHora; 
 	vHora = parseInt(document.getElementById("txtIdHora").value);
 
-	if (vHora < 0 && vHora > 24) {
+	if (vHora >= 7 && vHora<=11)
+	{
+		alert("Es de mañana")
+	}
+	else if( vHora>=12 && vHora <=19)
+	{
+		alert("Es de tarde")
+	}
+	else if((vHora>=0  && vHora<=6) || (vHora>19 && vHora<=24))
+	{
+		alert(" Es de noche")
+	}
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	if (vHora <= 0 && vHora >= 24) {
 		alert("La hora no existe");
 	}
 
