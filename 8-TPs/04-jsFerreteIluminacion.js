@@ -10,6 +10,7 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
  */
 // CON SWITCH
 
+/*
 function CalcularPrecio() {
     let vCantLamp;
     let vDesc;
@@ -78,18 +79,18 @@ function CalcularPrecio() {
             break;
         }
     
-    /*if (vDesc>120) {
+    if (vDesc>120) {
             document.getElementById("txtIdprecioDescuento").value = (vDesc * 1.10).toFixed(2);
             alert("IIBB Usted pagó " + ((vDesc * 1.10).toFixed(2)) + " final siendo " + ((vDesc * 0.10).toFixed(2)) + " el impuesto agregado");
         }
-    */
+    
       
 }
 
+*/
 
 
 
-/*
 // CON IF
 function CalcularPrecio() {
     let vCantLamp;
@@ -147,4 +148,4 @@ function CalcularPrecio() {
         alert("IIBB Usted pagó " + ((vDesc * 1.10).toFixed(2)) + " final siendo " + ((vDesc * 0.10).toFixed(2)) + " el impuesto agregado");
     }
 }
-*/
+

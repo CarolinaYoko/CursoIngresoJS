@@ -3,7 +3,14 @@ al presionar el botón
 pedir un número entre 0 y 9 inclusive.*/
 function mostrar()
 {
-	var numeroIngresado;
-	numeroIngresado = prompt("ingrese un número entre 0 y 10.");
+	let nIngresado;
+	nIngresado = parseInt(prompt("ingrese un número entre 0 y 9."));
+
+	while (nIngresado>9 || nIngresado<0){
+		nIngresado = parseInt(prompt("ingrese un número entre 0 y 9."));
+	}
+	
+	document.getElementById("txtIdNumero").value = nIngresado;
+	
 	
 }//FIN DE LA FUNCIÓN

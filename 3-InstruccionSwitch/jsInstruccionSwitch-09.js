@@ -1,7 +1,8 @@
 function mostrar() {
 	let estacionIngresada;
 	let destino;
-	let tarifa;
+	let tFinal;
+	const tarifa = 15000;
 	estacionIngresada = document.getElementById("txtIdEstacion").value;
 	destino = document.getElementById("txtIdDestino").value;
 
@@ -9,46 +10,46 @@ function mostrar() {
 		case "Invierno":
 			switch (destino) {
 				case "Bariloche":
-					tarifa = 15000 * 1.20;
-					alert("El importe final es: $" + tarifa);
+					tFinal = tarifa * 1.20;
+					alert("El importe final es: $" + tFinal);
 					break;
 				case "Mar del plata":
-					tarifa = 15000 * 0.80;
-					alert("El importe final es: $" + tarifa);
+					tFinal = tarifa * 0.80;
+					alert("El importe final es: $" + tFinal);
 					break;
 				default:
-					tarifa = 15000 * 1.10;
-					alert("El importe final es: $" + tarifa);
+					tFinal = tarifa * 0.90;
+					alert("El importe final es: $" + tFinal);
 					break;
 			}
 			break;
 		case "Verano":
 			switch (destino) {
 				case "Bariloche":
-					tarifa = 15000 * 0.80;
-					alert("El importe final es: $" + tarifa);
+					tFinal = tarifa * 0.80;
+					alert("El importe final es: $" + tFinal);
 					break;
 				case "Mar del plata":
-					tarifa = 15000 * 1.20;
-					alert("El importe final es: $" + tarifa);
+					tFinal = tarifa * 1.20;
+					alert("El importe final es: $" + tFinal);
 					break;
 				default:
-					tarifa = 15000 * 1.10;
-					alert("El importe final es: $" + tarifa);
-					break;
+					tFinal = tarifa * 1.10;
+					alert("El importe final es: $" + tFinal);
+					break; 
 			}
 			break;
 
 		default:
 			switch (destino) {
 				case "Cordoba":
-					tarifa = 15000;
-					alert("El importe final es: $" + tarifa);
+					tFinal = tarifa;
+					alert("El importe final es: $" + tFinal);
 					break;
 
 				default:
-					tarifa = 15000 * 1.10
-					alert("El importe final es: $" + tarifa)
+					tFinal = tarifa * 1.10
+					alert("El importe final es: $" + tFinal)
 					break;
 			}
 			break;
