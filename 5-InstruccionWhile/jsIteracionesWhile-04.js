@@ -6,7 +6,7 @@ function mostrar()
 	let nIngresado;
 	nIngresado = parseInt(prompt("ingrese un número entre 0 y 9."));
 
-	while (nIngresado>9 || nIngresado<0){
+	while (nIngresado>9 || nIngresado<0 || isNaN (nIngresado)){
 		nIngresado = parseInt(prompt("ingrese un número entre 0 y 9."));
 	}
 	
