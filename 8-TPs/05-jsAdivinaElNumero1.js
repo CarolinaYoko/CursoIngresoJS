@@ -17,7 +17,7 @@ let i = 0;
 function comenzar() { //Genero el número RANDOM entre 1 y 100
 
   nSecreto = Math.round(Math.random() * (vMax - vMin) + vMin);   //alert(nSecreto);
-  i=0;
+  i = 0;
   document.getElementById("txtIdIntentos").value = ""
   document.getElementById("txtIdNumero").value = ""
 }
@@ -25,19 +25,22 @@ function comenzar() { //Genero el número RANDOM entre 1 y 100
 function verificar() {
 
   nIngresado = parseInt(document.getElementById("txtIdNumero").value);
-  i ++;
+  i++;
   document.getElementById("txtIdIntentos").value = i;
 
-  if (nSecreto == nIngresado) {
-    alert("Usted es un ganador y en solo " + i + " intentos");
-  }
-  else if  (nSecreto < nIngresado) {
-    alert("Te pasaste del número secreto");
+  if (nSecreto >= 0 && nSecreto <= 100) {
+    if (nSecreto == nIngresado) {
+      alert("Usted es un ganador y en solo " + i + " intentos");
+    }
+    else if (nSecreto < nIngresado) {
+      alert("Te pasaste del número secreto");
+    }
+    else {
+      alert("Falta para el número secreto");
+    }
   }
   else {
-    alert("Falta para el número secreto");
+    alert("Lo ingresado no es válido")
   }
-  
-
-  }
+}
 
