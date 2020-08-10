@@ -2,20 +2,21 @@ function mostrar() {
 	let Num;
 	let Div = 0
 
-	Num = parseInt(prompt("Ingrese un número",));
+	do {
+		Num = parseInt(prompt("Ingresar número"));
+	} while (Num <=1 || isNaN(Num))
 
-	for (i = 1; i < Num; i++) {
-
+	for (let i = 1; i < Num; i++) {
 		if (Num % i == 0 && i > Div) {
-			Div = i;
+			Div = i
+			//Div++;
 		}
 	}
-	if (Div == 1) {
-		console.log(Num + " es primo" + Div);
+	if (Div == 1 ) {
+		console.log(Num + " es primo" );
 	}
-
 	else {
-		console.log(Num + " es compuesto" + Div);
+		console.log(Num + " es compuesto" );
 	}
 
 }//FIN DE LA FUNCIÓN
